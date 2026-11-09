@@ -13,12 +13,13 @@ HOUR(TO_TIMESTAMP(STARTEDAT)) AS HOUR_STARTEDAT,
 
 
 from 
-{{source('demo', 'bike') }}
+{{ref('stg_bike') }}
 
 )
 
 select 
 *
 from CTE
+
 
 
